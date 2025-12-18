@@ -303,8 +303,8 @@ old or older.
 let isAdultPresent = null;
 
 // Complete the exercise in the space below:
-
-const is18 = devs.some (dev => (2025 - dev.year) >= 18)
+const currentYear = new Date().getFullYear()
+const is18 = devs.some (dev => (currentYear - dev.year) >= 18)
 
 isAdultPresent = is18
 
@@ -329,7 +329,7 @@ let isEveryone19OrOlder = null;
 
 // Complete the exercise in the space below:
 
-const is19 = devs.every(dev => (2025 - dev.year) >= 19)
+const is19 = devs.every(dev => (currentYear - dev.year) >= 19)
 
 isEveryone19OrOlder = is19
 
